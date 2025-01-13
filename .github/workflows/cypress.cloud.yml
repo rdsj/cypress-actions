@@ -50,7 +50,7 @@ jobs:
           CYPRESS_RECORD_KEY: f11e7787-248d-4113-9da4-860d30558aeb
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   cypress-e2e-firefox:
-    needs: cypress-e2e-chrome
+    needs: cypress-e2e-electron
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node18.12.0-chrome107
